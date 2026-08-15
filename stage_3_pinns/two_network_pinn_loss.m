@@ -1,0 +1,79 @@
+function [loss,gWall,gFluid,gTheta,parts] = two_network_pinn_loss( ...
+    wallNet,fluidNet,theta,b,dataset,cfg,meta,useEnergy)
+%TWO_NETWORK_PINN_LOSS Joint inverse PINN objective.
+model.wallNet = wallNet;
+model.fluidNet = fluidNet;
+p = dataset.p0;
+pfit = decode_pinn_parameters(theta,dataset,cfg);
+k = pfit.k;
+eta = pfit.eta;
+alpha = pfit.alpha;
+
+% Data.
+[~,wd,~] = predict_pinn_state(model,b.data.x,b.data.t, ...
+    b.data.amp,b.data.freq,meta);
+Ldata = mean(((wd-b.data.w)/meta.w_scale).^2,'all');
+
+% Interior wave equation.
+[u,~,~] = predict_pinn_state(model,b.int.x,b.int.t, ...
+    b.int.amp,b.int.freq,meta);
+ut = dlgradient(sum(u,'all'),b.int.t, ...
+    'EnableHigherDerivatives',true);
+ux = dlgradient(sum(u,'all'),b.int.x, ...
+    'EnableHigherDerivatives',true);
+utt = dlgradient(sum(ut,'all'),b.int.t, ...
+    'EnableHigherDerivatives',true);
+uxx = dlgradient(sum(ux,'all'),b.int.x, ...
+    'EnableHigherDerivatives',true);
+rPDE = (utt-p.c_f^2*uxx)/meta.pde_scale;
+LPDE = mean(rPDE.^2,'all');
+
+% Wall dynamics at x=0.
+[uw,ww,~] = predict_pinn_state(model,b.wall.x,b.wall.t, ...
+    b.wall.amp,b.wall.freq,meta);
+uwx = dlgradient(sum(uw,'all'),b.wall.x, ...
+    'EnableHigherDerivatives',true);
+wwt = dlgradient(sum(ww,'all'),b.wall.t, ...
+    'EnableHigherDerivatives',true);
+wwtt = dlgradient(sum(wwt,'all'),b.wall.t, ...
+    'EnableHigherDerivatives',true);
+pres = pressure_dl(b.wall.t,b.wall.amp,b.wall.freq);
+rWall = (p.m_w*wwtt+eta*wwt+k*ww+alpha*ww.^3 ...
+    -p.A_eff*pres-p.rho_f*p.c_f^2*p.A_f*uwx)/meta.force_scale;
+Lwall = mean(rWall.^2,'all');
+
+% Radiation boundary.
+[uL,~,~] = predict_pinn_state(model,b.bnd.x,b.bnd.t, ...
+    b.bnd.amp,b.bnd.freq,meta);
+uLt = dlgradient(sum(uL,'all'),b.bnd.t, ...
+    'EnableHigherDerivatives',true);
+uLx = dlgradient(sum(uL,'all'),b.bnd.x, ...
+    'EnableHigherDerivatives',true);
+rB = (uLt+p.c_f*uLx)/meta.velocity_scale;
+Lbnd = mean(rB.^2,'all');
+
+% Initial state.
+[ui,wi,~] = predict_pinn_state(model,b.ic.x,b.ic.t, ...
+    b.ic.amp,b.ic.freq,meta);
+uit = dlgradient(sum(ui,'all'),b.ic.t, ...
+    'EnableHigherDerivatives',true);
+wit = dlgradient(sum(wi,'all'),b.ic.t, ...
+    'EnableHigherDerivatives',true);
+Lic = mean((ui/meta.w_scale).^2 + (wi/meta.w_scale).^2 + ...
+    (uit/meta.velocity_scale).^2 + ...
+    (wit/meta.velocity_scale).^2,'all');
+
+Lenergy = 0*sum(wd,'all');
+if useEnergy
+    Lenergy = two_network_energy_loss(model,b.energy,dataset, ...
+        meta,k,eta,alpha);
+end
+
+loss = cfg.lambda.data*Ldata + cfg.lambda.pde*LPDE + ...
+    cfg.lambda.wall*Lwall + cfg.lambda.radiation*Lbnd + ...
+    cfg.lambda.initial*Lic + cfg.lambda.energy*Lenergy;
+
+[gWall,gFluid,gTheta] = dlgradient(loss, ...
+    wallNet.Learnables,fluidNet.Learnables,theta);
+parts = [Ldata;LPDE;Lwall;Lbnd;Lic;Lenergy];
+end

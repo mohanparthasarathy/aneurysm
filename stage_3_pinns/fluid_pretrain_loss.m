@@ -1,0 +1,46 @@
+function [loss,gradFluid,parts] = fluid_pretrain_loss( ...
+    wallNet,fluidNet,b,dataset,cfg,meta)
+%FLUID_PRETRAIN_LOSS Train q with the already fitted wall network frozen.
+model.wallNet = wallNet;
+model.fluidNet = fluidNet;
+p = dataset.p0;
+
+% Interior wave equation.
+[u,~,~] = predict_pinn_state(model,b.int.x,b.int.t, ...
+    b.int.amp,b.int.freq,meta);
+ut = dlgradient(sum(u,'all'),b.int.t, ...
+    'EnableHigherDerivatives',true);
+ux = dlgradient(sum(u,'all'),b.int.x, ...
+    'EnableHigherDerivatives',true);
+utt = dlgradient(sum(ut,'all'),b.int.t, ...
+    'EnableHigherDerivatives',true);
+uxx = dlgradient(sum(ux,'all'),b.int.x, ...
+    'EnableHigherDerivatives',true);
+rPDE = (utt-p.c_f^2*uxx)/meta.pde_scale;
+LPDE = mean(rPDE.^2,'all');
+
+% Radiation boundary.
+[uL,~,~] = predict_pinn_state(model,b.bnd.x,b.bnd.t, ...
+    b.bnd.amp,b.bnd.freq,meta);
+uLt = dlgradient(sum(uL,'all'),b.bnd.t, ...
+    'EnableHigherDerivatives',true);
+uLx = dlgradient(sum(uL,'all'),b.bnd.x, ...
+    'EnableHigherDerivatives',true);
+rB = (uLt+p.c_f*uLx)/meta.velocity_scale;
+Lbnd = mean(rB.^2,'all');
+
+% Initial fluid displacement and velocity.
+[ui,~,~] = predict_pinn_state(model,b.ic.x,b.ic.t, ...
+    b.ic.amp,b.ic.freq,meta);
+uit = dlgradient(sum(ui,'all'),b.ic.t, ...
+    'EnableHigherDerivatives',true);
+Lic = mean((ui/meta.w_scale).^2 + ...
+    (uit/meta.velocity_scale).^2,'all');
+
+loss = cfg.pretrain.fluid_pde*LPDE + ...
+    cfg.pretrain.fluid_radiation*Lbnd + ...
+    cfg.pretrain.fluid_initial*Lic;
+
+gradFluid = dlgradient(loss,fluidNet.Learnables);
+parts = [LPDE;Lbnd;Lic];
+end
