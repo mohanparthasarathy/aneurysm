@@ -3,7 +3,7 @@
 MATLAB code and curated outputs accompanying the manuscript **“Modeling and simulation of biofluid--wall dynamics in intracranial
 aneurysms using physics-informed neural networks”** by Mohan Parthasarathy and Padmanabhan Seshaiyer.
 
-This repository contains the final computational workflow used for the forward model, analytical/numerical verification, forward transport experiments, local and practical identifiability, staged PINN comparisons, robustness experiments, and global sensitivity screening. The repository has been cleaned for publication: legacy stage copies, development-only utilities, cached runs, and redundant intermediate result archives have been removed. Technical comments needed to understand or reproduce the algorithms have been retained.
+This repository contains the computational workflow used for the forward model, analytical/numerical verification, forward transport experiments, local and practical identifiability, staged PINN comparisons, robustness experiments, and global sensitivity screening. The repository has been cleaned for publication: legacy stage copies, development-only utilities, cached runs, and redundant intermediate result archives have been removed. Technical comments needed to understand or reproduce the algorithms have been retained.
 
 ## Repository structure
 
@@ -157,7 +157,7 @@ See `stage_3_pinns/pinn_settings.m` for the complete configuration.
 
 `publication_results/` contains lightweight CSV files corresponding to the principal numerical results. Large trained-network MAT files and intermediate optimizer checkpoints were intentionally omitted to keep the public repository manageable; they can be regenerated from the included code and synthetic datasets.
 
-`publication_figures/` contains the figure files available in the supplied archive. The manuscript's conceptual schematic `biofluidwallmodel.png` was **not present in the uploaded code archive**, so it is not fabricated here. Add the final schematic image to `publication_figures/` before making the GitHub repository public if you want the repository to contain every manuscript graphic.
+`publication_figures/` contains the figure files available in the supplied archive. 
 
 ## Notes on reproducibility
 
@@ -169,13 +169,9 @@ See `stage_3_pinns/pinn_settings.m` for the complete configuration.
 
 ## Citation
 
-If you use this code, please cite the accompanying manuscript. A machine-readable citation template is provided in `CITATION.cff`; update the DOI once the article is published.
+If you use this code, please cite the accompanying manuscript. A machine-readable citation template is provided in `CITATION.cff`.
 
 ## Authors
 
 - Mohan Parthasarathy — Thomas Jefferson High School for Science and Technology
 - Padmanabhan Seshaiyer — Department of Mathematical Sciences, George Mason University
-
-## License
-
-No software license was specified in the source archive, so this cleaned repository does not add one automatically. Add the license agreed upon by the authors before public release if you intend to permit reuse beyond the rights granted by the publication and repository host.
