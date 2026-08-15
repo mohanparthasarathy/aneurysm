@@ -1,0 +1,18 @@
+parameter_symbol,specific_definition,value_SI,unit,justification
+r,Equivalent spherical aneurysm-sac radius,0.004,m,Representative 8-mm sac diameter
+h,Uniform load-bearing aneurysm-wall thickness,0.0002,m,Representative modeling value; actual wall is heterogeneous
+V_ref,Reference aneurysm-sac volume,2.68082573106329e-07,m^3,Computed as 4*pi*r^3/3
+A_eff,Modal area dV/dw for radial sac expansion,0.00020106192982974675,m^2,Computed as 4*pi*r^2
+E,Small-strain tangent Young modulus of aneurysm wall,2600000.0,Pa,Literature-centered baseline within reported 0.5-5.7 MPa range
+nu,Aneurysm-wall Poisson ratio,0.49,1,Nearly incompressible soft-tissue assumption
+rho_w,Aneurysm-wall tissue density,1050,kg/m^3,Water-like soft-tissue density
+m_w,Equivalent spherical-sac wall mass,4.2223005264246814e-05,kg,Derived as rho_w*A_eff*h
+k,Generalized radial wall stiffness,25625.540076340276,N/m,Derived from thin spherical-shell pressure expansion
+eta,Generalized Kelvin-Voigt wall coefficient,169.93464052287584,N s/m,Calibrated to loss tangent 0.05 at 1.2 Hz; not directly measured
+alpha,Cubic generalized strain-stiffening coefficient,5338654182570.89,N/m^3,Calibrated to 25% tangent-stiffness increase at 20 micrometers
+rho_f,Surrounding CSF density,1000,kg/m^3,CSF treated as water-like
+c_f,Effective CSF cardiac velocity-wave speed,4.6,m/s,Human MRI systolic wave-speed measurement
+A_f,Effective communicating CSF waveguide area,0.0001,m^2,Reduced 1-cm^2 local area; sensitivity parameter
+L,Truncated outgoing-wave domain length,0.1,m,Reduced numerical domain
+P_0,Sinusoidal transmural-pressure amplitude,2666.44,Pa,Half of representative 40-mmHg arterial pulse pressure
+f_0,Fundamental cardiac forcing frequency,1.2,Hz,72 beats/min resting baseline
