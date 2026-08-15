@@ -1,0 +1,777 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 471,
+    "sha256": "5640daf6596447570aafce259ed3e32ce6befb530fc4b2fe7e7eed8febacf92b"
+  },
+  {
+    "path": "CITATION.cff",
+    "bytes": 300,
+    "sha256": "eb6c3c9c34b8286ec6d181c518ccf385897b08a81357b6577d059f8d23d69ef1"
+  },
+  {
+    "path": "README.md",
+    "bytes": 10377,
+    "sha256": "8b02dc9546cdb09cf3ee597ae8dc13ced0321ca4f84efc73b82b8997d4e1675e"
+  },
+  {
+    "path": "aneurysm_forward_physics/analyze_reduced_cycles.m",
+    "bytes": 1879,
+    "sha256": "e9e122efa26f239dbdccf4afd89efe568ad71f38905d063c90ecdfa4c414bc1a"
+  },
+  {
+    "path": "aneurysm_forward_physics/analyze_steady_cycles.m",
+    "bytes": 2913,
+    "sha256": "b7eb5efe6c89fe4ff8d81ea236699622bee2f7d0579dca26e8b32484ed6fd0fd"
+  },
+  {
+    "path": "aneurysm_forward_physics/compute_dimensionless_groups.m",
+    "bytes": 2127,
+    "sha256": "74ee4a85653a90824842128d8be9c28e4a0105c7d1d45e1acdc54e5187e034a4"
+  },
+  {
+    "path": "aneurysm_forward_physics/dimensionless_groups_table.m",
+    "bytes": 3311,
+    "sha256": "3b1d0aabf65c52e85fdb1be0ee434dfc8fe8e0555de63297a85c5b7430946d50"
+  },
+  {
+    "path": "aneurysm_forward_physics/harmonic_fit.m",
+    "bytes": 2128,
+    "sha256": "8683421acfe648d184fe69711f27dc8234b4f698f92b361401534e1d3ebd6bc3"
+  },
+  {
+    "path": "aneurysm_forward_physics/make_forward_physics_plots.m",
+    "bytes": 2842,
+    "sha256": "e6e25bd5e7a11b271182c57dcbdf9dcfbf0d9d6437229e15d0738453cc6441ef"
+  },
+  {
+    "path": "aneurysm_forward_physics/metrics_struct_to_row.m",
+    "bytes": 232,
+    "sha256": "4a529b59a66ace00d7a96f8a7ff607eb95d5d17ef4eaddbcae6ea5110c04365c"
+  },
+  {
+    "path": "aneurysm_forward_physics/physiological_parameter_table.csv",
+    "bytes": 1764,
+    "sha256": "a736c6128197f2f29dcc616ac0722f04ec1e9380f7487a302db2ad50d27857e9"
+  },
+  {
+    "path": "aneurysm_forward_physics/physiological_parameters.m",
+    "bytes": 3269,
+    "sha256": "dce494aa08e74eef70e7ad52992461c5acb16d70d3030868dfac8f49fb86b5ee"
+  },
+  {
+    "path": "aneurysm_forward_physics/plot_baseline_cycle.m",
+    "bytes": 1782,
+    "sha256": "03678376f605cf6741aaa13dfb6b0539ae83bd8c72bacaa3671dc2a3298b050e"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_all_forward_physics.m",
+    "bytes": 275,
+    "sha256": "f3c5bb7eed5d03b2d1469204f3eab94c1c42861b7d8648d4635043f115f54b76"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_amplitude_compliance_curve.m",
+    "bytes": 4716,
+    "sha256": "0dc7d786a87cd197ab71bf7cf167965e62705e1f78b9b81a451e6d48badb80d1"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_dimensional_analysis.m",
+    "bytes": 4147,
+    "sha256": "ef107df3340860deb1ca74cf137dc087d8c29ba6843c8ea4168fb21a2fab31d8"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_extended_physics.m",
+    "bytes": 585,
+    "sha256": "d90be9d42d216708d6ac0099998f2944f6b263013dcde951cbc158ad2905af9c"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_forward_physics_tests.m",
+    "bytes": 3137,
+    "sha256": "c46d217a2b39f9b617a5d1cc3257aa3db0c66b34938cd17cc89a037c757a4950"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_single_physics_case.m",
+    "bytes": 863,
+    "sha256": "80c9ca97434b68dc26a60cd179a98b774ac3c59e52446fcd8cdfd3a7780c9b7d"
+  },
+  {
+    "path": "aneurysm_forward_physics/run_wideband_frequency_response.m",
+    "bytes": 6302,
+    "sha256": "0285c5efbdf40130bb693556d9048791c78ae44161d5357f097ec88ff0de188d"
+  },
+  {
+    "path": "aneurysm_forward_physics/solve_reduced_wall.m",
+    "bytes": 2141,
+    "sha256": "b7646593119faddf17063fce44ec08b8ad6008deb881fa0b6f90837f96514ae6"
+  },
+  {
+    "path": "aneurysm_forward_physics/write_parameter_table.m",
+    "bytes": 3016,
+    "sha256": "67dd72147e78b0cbaba3961ead7a572ac795474a887c8b3d9ed751bbc7511ace"
+  },
+  {
+    "path": "aneurysm_forward_solver/build_semidiscrete_model.m",
+    "bytes": 1616,
+    "sha256": "8b1ab00ba4ffd77c9a6d95a19d9aa75896ff59afbe9f3f547e7e65618dededaf"
+  },
+  {
+    "path": "aneurysm_forward_solver/coupled_rhs.m",
+    "bytes": 396,
+    "sha256": "60297c343a95638d4afa203dad9f09c475b8589882499520669b09f493bd0e15"
+  },
+  {
+    "path": "aneurysm_forward_solver/default_parameters.m",
+    "bytes": 1215,
+    "sha256": "52423e62eeb704a5f306fa429faf873c2dd14292c6b04af26c40d33d83152a56"
+  },
+  {
+    "path": "aneurysm_forward_solver/evaluate_energy.m",
+    "bytes": 2068,
+    "sha256": "51377b3b819da3efc8c351bd5354eab2f98ebd7ee54a1905384980c7df9aefc6"
+  },
+  {
+    "path": "aneurysm_forward_solver/example_forward_run.m",
+    "bytes": 600,
+    "sha256": "2596ba2a48f8820ef2a9ed3a116710f27730754cfa9634550057403366f99009"
+  },
+  {
+    "path": "aneurysm_forward_solver/linear_analytic_solution.m",
+    "bytes": 1395,
+    "sha256": "49522855f9cf8b893d40b1d9eefe8ede931bfa35dff0cb6dcea7cfd869846f16"
+  },
+  {
+    "path": "aneurysm_forward_solver/make_verification_summary.m",
+    "bytes": 9542,
+    "sha256": "a70f675c40377f88ab856b9f103576d6434c1a23cbdc58f8e09bab05528f62a9"
+  },
+  {
+    "path": "aneurysm_forward_solver/manufactured_exact.m",
+    "bytes": 448,
+    "sha256": "9d11b8e521f60c47f93f0a269f34cd124339537106521ce1c549f568e1be35e8"
+  },
+  {
+    "path": "aneurysm_forward_solver/plot_forward_solution.m",
+    "bytes": 509,
+    "sha256": "6cf288358ee3a3bef17ca4029b30195e0649f5b7309c5e048c34c01253909038"
+  },
+  {
+    "path": "aneurysm_forward_solver/pressure_forcing.m",
+    "bytes": 1193,
+    "sha256": "04f36ca6b42cc5eccec40b604cd531b95761ba3cab2355cd4539c1875d22d665"
+  },
+  {
+    "path": "aneurysm_forward_solver/run_all_tests.m",
+    "bytes": 424,
+    "sha256": "441447c4f4eb5add2ab99d4b976002b92f01cbf826c79b52089f54dd73e72e64"
+  },
+  {
+    "path": "aneurysm_forward_solver/run_analytic_validation.m",
+    "bytes": 1098,
+    "sha256": "9ff0934a4e32ff13bf05c14dafbdafa6389536c6d6f20cc73b5e76dd2220e89b"
+  },
+  {
+    "path": "aneurysm_forward_solver/run_energy_tests.m",
+    "bytes": 1851,
+    "sha256": "e2d406719565f8c936363eb2b3dc7a2a88bfd2686c3b7fe5664fef507d0b5f80"
+  },
+  {
+    "path": "aneurysm_forward_solver/run_manufactured_convergence.m",
+    "bytes": 2426,
+    "sha256": "b1aaff74bb8d08456695bf4971c83a3c6b73476eb30a5c660b6cf4dac3e7b49a"
+  },
+  {
+    "path": "aneurysm_forward_solver/solve_forward.m",
+    "bytes": 3892,
+    "sha256": "054bdfd21055036f180915c8edbfa8e8ff9ddc89fe34fea3c4dcf1cafa46ac0e"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/evaluate_model_batch.m",
+    "bytes": 558,
+    "sha256": "fe6382611dfce542939ef08c762e44944a3165c950e3a758e6e8b49ad9194571"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/evaluate_model_sample.m",
+    "bytes": 703,
+    "sha256": "5d75d115a1d6b764b8bbf16f2789726b8625242e5640390177db3c169f36a1ee"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/map_unit_samples.m",
+    "bytes": 648,
+    "sha256": "15794039d33398b6ba2687479f06e95f0bb9b51c1c88b4c59bda1999f0bd160a"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/morris_screening.m",
+    "bytes": 906,
+    "sha256": "185abaccdd5a017d7e80f0fddf4ef8f6d6f240c4a0e1a04c72da86cdde142ac8"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/plot_sensitivity_results.m",
+    "bytes": 922,
+    "sha256": "1019730988629efac25d3f1ea908fbdd15d694db5d84602d0cb09b96482e58a9"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/run_global_sensitivity.m",
+    "bytes": 1069,
+    "sha256": "54566b28fa60993c7955fab0c205301298dc1e7a55ad1cdc2a6a5cfc4e555013"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/run_sensitivity_smoke_test.m",
+    "bytes": 427,
+    "sha256": "3a03c628b2ffab61b6b7b52bd4763039a42af82196eea9e74f868ee1328d6425"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/sensitivity_settings.m",
+    "bytes": 1120,
+    "sha256": "ba7dd999600649a8b4df10512c5813ee578e5ea2f5dfb38c9ef662649cb04253"
+  },
+  {
+    "path": "aneurysm_global_sensitivity/sobol_saltelli.m",
+    "bytes": 879,
+    "sha256": "7cbad2be0a09f8cf06f9483a02ae52882d1e44d334691b74515a681d7465e05f"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/build_inverse_protocol.m",
+    "bytes": 1745,
+    "sha256": "e64afc0654e1e4b44746724889c77a8e8184d1e51e1b0a4988d4a18a29d5095b"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/effective_volume_parameters.m",
+    "bytes": 641,
+    "sha256": "9bbc21e7421dfb93a30f60e9fa89d1115000a2f8f14861bb4357d584d13787c5"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/fit_inverse_parameters.m",
+    "bytes": 2113,
+    "sha256": "24665dfcd84703c314f025e219210a2ce7789b1c979fbabe6c0b5dd3e4793143"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/inverse_parameter_map.m",
+    "bytes": 430,
+    "sha256": "32c7161ec070a23054f9c660af2a20e2ea9ed4dfa7272bacd6ab51b4c01bb561"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/inverse_residual_vector.m",
+    "bytes": 565,
+    "sha256": "745eee9a882d70d5fc8f2ec104cd2d99c56541f9b961aac3e2f6d214c3111af2"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/inverse_study_settings.m",
+    "bytes": 1811,
+    "sha256": "73853b13cf2c8248bb829e94a1e8b32e9a48896e3683b11e6f2d11e11e4a9574"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/local_identifiability_analysis.m",
+    "bytes": 1600,
+    "sha256": "96cf6c8c2ccd2dbe483dd5773c9f33832e2665368b4b136d85eeedb7628e6433"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/make_inverse_identifiability_plots.m",
+    "bytes": 2394,
+    "sha256": "657a71635a7c32dc26f9ee2929076779fce1506e4e62a72d293618fd2e28a108"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/quick_inverse_demo.m",
+    "bytes": 687,
+    "sha256": "b33f81578cd5a0b784d5f96835bb8f171c97cd9a5516dbdec98d2ca5198a5d17"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/run_inverse_identifiability_study.m",
+    "bytes": 1044,
+    "sha256": "f5bcc6f2ee07544d5527f9cef3aa2c6df023937303cd903358305b3eb3bb09c6"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/run_practical_identifiability.m",
+    "bytes": 3469,
+    "sha256": "0f9257c391490b975fda697f3954974406e9b19f16da48a63fb5eb8f4eef9055"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/run_profile_likelihood.m",
+    "bytes": 3344,
+    "sha256": "534b854fb03a9fc6af600152c8045b84ff28bc7751037a79d6b25c93720af88c"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/run_structural_identifiability.m",
+    "bytes": 1807,
+    "sha256": "fed018b96471447d9942b9de40ce7c80ef995fe2c97c305457371673041bb1f1"
+  },
+  {
+    "path": "aneurysm_inverse_identifiability/solve_volume_inverse_model.m",
+    "bytes": 2247,
+    "sha256": "58b7914ba8b301d572bd407e063bdd2d115667a179a480059f53f6ed92e4c287"
+  },
+  {
+    "path": "aneurysm_robustness/aggregate_robustness_results.m",
+    "bytes": 3383,
+    "sha256": "ad35c61179d991c31bf777147265b029ed259857a7c7857f329bb11c98a03d14"
+  },
+  {
+    "path": "aneurysm_robustness/plot_robustness_results.m",
+    "bytes": 4112,
+    "sha256": "52305bf005599113853422f519b242279af6a39bcc7f75be4aeaf79a9646cdd9"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_build_dataset.m",
+    "bytes": 1251,
+    "sha256": "1d42f014059cb66aea0d30046004c448deca02d0ee77b566285f125f395e67c6"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_case_id.m",
+    "bytes": 306,
+    "sha256": "4583334e4dbbe920da3f2c7b7e6230c0a00a64cc6db93ece6d0b12cd0143ea95"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_case_table.m",
+    "bytes": 1384,
+    "sha256": "98086df67317f3e9715e0e3642aa7c5ae8b5907bb6ae1a5ba186c549c070867d"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_engine_config.m",
+    "bytes": 2166,
+    "sha256": "dbd184354e83367304f35563bf823218a2ef0fa89a1ab84c0e4d5c8fd2f5c481"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_get_clean_truth.m",
+    "bytes": 1845,
+    "sha256": "2c1cb56f00c6ebe7e9ece9ec56330cb366cd92fbb9970064153671e461fb1a0b"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_progress.m",
+    "bytes": 807,
+    "sha256": "70e54100e803673abc332f40f301a979de9d148b18fb2658f11212184f397149"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_settings.m",
+    "bytes": 3679,
+    "sha256": "43ac26326b21798cb28fe0f02e733f08248b012cd319dcf7741a6116133b8732"
+  },
+  {
+    "path": "aneurysm_robustness/robustness_setup_paths.m",
+    "bytes": 287,
+    "sha256": "3d9370dc190d18a2e9dc2be2816d79696954c481529379494840ed21e50c52f2"
+  },
+  {
+    "path": "aneurysm_robustness/run_robustness_postprocess.m",
+    "bytes": 357,
+    "sha256": "73d0755e5f503d42887037d656f1f5fc7d3ee490758d3a83f0b037a58ed805c0"
+  },
+  {
+    "path": "aneurysm_robustness/run_robustness_smoke_test.m",
+    "bytes": 1347,
+    "sha256": "67c8358bc7691ebf03d23ed84db565d9f9cae14e2d06c4120e3a2ba5ef5f0aab"
+  },
+  {
+    "path": "aneurysm_robustness/run_robustness_stage.m",
+    "bytes": 847,
+    "sha256": "35bc2931966bb45bb0b21c3ffdc5ca0fba63e5174fc27a36a92a0900b12a41bb"
+  },
+  {
+    "path": "aneurysm_robustness/run_robustness_suite.m",
+    "bytes": 1688,
+    "sha256": "dd7abde705840a5b401391ee1086b4e0f00b9126bd91263a09531756f69079f5"
+  },
+  {
+    "path": "aneurysm_robustness/run_single_robustness_case.m",
+    "bytes": 5782,
+    "sha256": "956b0c45fba4ec7b3b1fe93adf60a643a5b1b3a1abac7fc882d0abd4ffd81a30"
+  },
+  {
+    "path": "publication_figures/README.md",
+    "bytes": 1126,
+    "sha256": "c412a298823fc26dc7125fe95296fbbb84f5a677edebff6224c1f81be2d44cd9"
+  },
+  {
+    "path": "publication_figures/amplitude_dependent_compliance.png",
+    "bytes": 61436,
+    "sha256": "b4c620ed6263c108c5c308d19ed73d6fc818424878b147b33253b341280375e5"
+  },
+  {
+    "path": "publication_figures/baseline_pressure_displacement.png",
+    "bytes": 72956,
+    "sha256": "8451400e34d653ee0d54b60cdbedca9312212e72b21c5cbcaa9d048a1da1f9ee"
+  },
+  {
+    "path": "publication_figures/baseline_pressure_volume_loop.png",
+    "bytes": 50928,
+    "sha256": "0f60fe9fcf7055e96369da4c6da1d46c1ac5e7d5197a15ab4a80aceb2bfbc4f6"
+  },
+  {
+    "path": "publication_figures/identifiability_singular_values.png",
+    "bytes": 72368,
+    "sha256": "9d0cd100708eac0aefaf27fd15f127d5c7426e351f8b83992d607ee857df612c"
+  },
+  {
+    "path": "publication_figures/noise_parameter_errors_stage3.png",
+    "bytes": 114246,
+    "sha256": "7f73b1380b01b0af076acfd6a8c59c11c6b9bd49ce219655dbaee60eb5bf790f"
+  },
+  {
+    "path": "publication_figures/noise_state_energy_metrics.png",
+    "bytes": 282397,
+    "sha256": "c3053bbfbf06c6605c07c14517c18c0f0cfb1966c4cfbe0468f5fc4bea2c9a55"
+  },
+  {
+    "path": "publication_figures/sobol_dynamic_compliance_uL_per_mmHg.png",
+    "bytes": 93061,
+    "sha256": "50b4a2732c32207555dcab6bdd8887afe568689af00b753d650b18e23f6dda61"
+  },
+  {
+    "path": "publication_figures/sobol_phase_lag_deg.png",
+    "bytes": 89646,
+    "sha256": "bdd411e7d53bd23e59a09fac8af73ec9d11f5d09264905c03e7448a1d303ca93"
+  },
+  {
+    "path": "publication_figures/sobol_wall_THD.png",
+    "bytes": 84658,
+    "sha256": "e0dba99b44e6a0666612fa175b190f37e399ec4022a11f5ebdcf1977a910fb3a"
+  },
+  {
+    "path": "publication_figures/sparsity_parameter_errors_stage3.png",
+    "bytes": 123104,
+    "sha256": "4b3b35cf7d5442db726a59b9f4b49e7b171797b2e998f793223ccba5c329ae5a"
+  },
+  {
+    "path": "publication_figures/sparsity_state_energy_metrics.png",
+    "bytes": 279898,
+    "sha256": "6f5a10a4617fa929893e75066fbfe0d32f2c85886f38a4ccdece34400108cbdb"
+  },
+  {
+    "path": "publication_figures/stage1_k_only_parameter_errors.png",
+    "bytes": 56489,
+    "sha256": "7d3fb121efb6ce28de1391e8ab4e62e56f0909da8b9def6501cd8bb51bcb0da9"
+  },
+  {
+    "path": "publication_figures/stage2_k_eta_parameter_errors.png",
+    "bytes": 58250,
+    "sha256": "0b67deca945677d284b0d98e9fdb3f82ab51d3a6ad2643c66d3399f5d5cefe21"
+  },
+  {
+    "path": "publication_figures/stage3_k_eta_alpha_Energy_PINN_parameter_history.png",
+    "bytes": 105010,
+    "sha256": "e457c1c43c7d593480a07211e89ac8c15a44c4689dda1f6ac290465a139e9400"
+  },
+  {
+    "path": "publication_figures/stage3_k_eta_alpha_PINN_parameter_history.png",
+    "bytes": 102686,
+    "sha256": "b878b10dfe609584d9e099a1d49fe0496a51851168d34b3589124d599ccb55dd"
+  },
+  {
+    "path": "publication_figures/stage3_k_eta_alpha_parameter_errors.png",
+    "bytes": 70953,
+    "sha256": "330b1b4c01938af8de442ec576f137ad1ebe4d9bb4c130af3ccf4e1019537c66"
+  },
+  {
+    "path": "publication_figures/verification_summary.pdf",
+    "bytes": 236205,
+    "sha256": "5401117153b57473e43a42f9f8d70d78d30a07c61400bc04f3a2ddb8abc54079"
+  },
+  {
+    "path": "publication_figures/verification_summary.png",
+    "bytes": 466703,
+    "sha256": "0210efb8a049216e71cea3a657aaa003b0e3d1e2b0b25bd80731d003a0883ce0"
+  },
+  {
+    "path": "publication_figures/wideband_frequency_response.png",
+    "bytes": 70732,
+    "sha256": "17430f08b09ac7896340accb61759aac7bcb419d42a9e1ad3d2bef0a34eb3cf9"
+  },
+  {
+    "path": "publication_figures/wideband_phase_response.png",
+    "bytes": 73927,
+    "sha256": "9316f8efa641d2f0c21adf9d94ffb8d5ee6b5d1d0ed771d98cfe2c4aacfd69f1"
+  },
+  {
+    "path": "publication_results/README.md",
+    "bytes": 509,
+    "sha256": "713ba0f9413f9883456e57420de7dd32cfd2a28c4f11a2f359641902514959e9"
+  },
+  {
+    "path": "publication_results/local_identifiability_summary.csv",
+    "bytes": 605,
+    "sha256": "c9ec6ac3c80f333d2ea94c386db8e3e602c3b3113fc6b277391804db9837130d"
+  },
+  {
+    "path": "publication_results/noise_robustness_summary.csv",
+    "bytes": 3709,
+    "sha256": "ff4c8fb5336e52cff221fd4028092a4f26d7eb0df109b845a88a836e9da5b015"
+  },
+  {
+    "path": "publication_results/robustness_all_runs.csv",
+    "bytes": 12592,
+    "sha256": "ed6bfd6433c23722064d4d83cf69cfec02e9e35325c4db29192b02a905f6938c"
+  },
+  {
+    "path": "publication_results/sensitivity_dynamic_compliance.csv",
+    "bytes": 739,
+    "sha256": "ea2376d5506d1351ddc07d43c39be2771c33473f51971d077953d199efe5d197"
+  },
+  {
+    "path": "publication_results/sensitivity_hysteresis_work.csv",
+    "bytes": 757,
+    "sha256": "3f2ac187b76860def65889a2af6e4a0f857dd9a39e585142e02c079c9479e8e0"
+  },
+  {
+    "path": "publication_results/sensitivity_phase_lag.csv",
+    "bytes": 712,
+    "sha256": "24f0f3202c5b6965067089edd7deed7644267c180b841f8e3da7eed5a24889ea"
+  },
+  {
+    "path": "publication_results/sensitivity_wall_THD.csv",
+    "bytes": 744,
+    "sha256": "1571938b605a3b0c75712e2267f2eb7ebc045f8b75d8f535a444ab40267746e0"
+  },
+  {
+    "path": "publication_results/sensitivity_wall_loss_fraction.csv",
+    "bytes": 759,
+    "sha256": "86c8172b73d6159bb31b57158485e0e32ec06197aa2f2c5321511a2b7c48fd59"
+  },
+  {
+    "path": "publication_results/sparsity_robustness_summary.csv",
+    "bytes": 3723,
+    "sha256": "9b4d7af54339c6ded97a7a4bc59e3eab92428de67f7bf72cde328025efaaff0a"
+  },
+  {
+    "path": "publication_results/stage1_k_only_comparison.csv",
+    "bytes": 330,
+    "sha256": "38fc06ca7a3c365ef5d86056d9a8ce65f078d70d47dbd4b5caf84c100cbba1a6"
+  },
+  {
+    "path": "publication_results/stage2_k_eta_comparison.csv",
+    "bytes": 828,
+    "sha256": "848bb58212e024fefa62706387d5cfde1bbdeccb14766c4184064fab71d01675"
+  },
+  {
+    "path": "publication_results/stage3_k_eta_alpha_comparison.csv",
+    "bytes": 880,
+    "sha256": "3b51628f381ff58260f3286e40b6f52bbae25ed0cffa7c70d396314352a28576"
+  },
+  {
+    "path": "publication_results/staged_inverse_comparison.csv",
+    "bytes": 1645,
+    "sha256": "b828e4db2151934ec1dbf2afe9a65e56bfbf357235dad24eaa6ec4ff35b09577"
+  },
+  {
+    "path": "publication_results/wideband_PDE_reduction_validation.csv",
+    "bytes": 717,
+    "sha256": "396fdf95bbbfa25ea38eeae187102ee5505bd269468c6f8f34e51f0bab7449c9"
+  },
+  {
+    "path": "publication_results/wideband_frequency_response.csv",
+    "bytes": 29745,
+    "sha256": "debb3114c6de7bcf003f41e9a0c4302ad5bd1833da75319f6caa21c4f11db46b"
+  },
+  {
+    "path": "publication_workflow.m",
+    "bytes": 1892,
+    "sha256": "2ef69158cd0be4bc465508b0fccec9732b9b6b53ab5fbbd34d4fc258777ed149"
+  },
+  {
+    "path": "stage_3_pinns/affine_k_optimum.m",
+    "bytes": 1002,
+    "sha256": "d422c593e3617d6413c672c9731f3b7e912e3f777da57d4c99c36b3987f2f628"
+  },
+  {
+    "path": "stage_3_pinns/build_fluid_network.m",
+    "bytes": 512,
+    "sha256": "37145f99a07c53a5eb838c1fb53bad5e0820d3959c53a461b57be76f51dff82e"
+  },
+  {
+    "path": "stage_3_pinns/build_full_wall_batch.m",
+    "bytes": 778,
+    "sha256": "366b4a26a979ea331a1fbd36b0c0e1c044b884419e87ef2866642d2f4679d1ca"
+  },
+  {
+    "path": "stage_3_pinns/build_stage_protocols.m",
+    "bytes": 787,
+    "sha256": "bb82411f24cf3a36c78c406544e867d960d051873bcb49a61f551c3d015e36d9"
+  },
+  {
+    "path": "stage_3_pinns/build_wall_network.m",
+    "bytes": 634,
+    "sha256": "d6123eb9617124e1915dd51b80c277e923a5c96185575eb8016497f42d32d06c"
+  },
+  {
+    "path": "stage_3_pinns/collect_affine_residual_terms.m",
+    "bytes": 3061,
+    "sha256": "3c016b5ce24f56237598bf799f88b89feda81ecfa75c35fcda00b50219c24b0a"
+  },
+  {
+    "path": "stage_3_pinns/common_energy_residual_metric.m",
+    "bytes": 313,
+    "sha256": "9d2e17cde0fc509a1435e3cf129364f3b16285aef6d09503d996251f10332bd8"
+  },
+  {
+    "path": "stage_3_pinns/data/stage1_k_only_synthetic.mat",
+    "bytes": 6172218,
+    "sha256": "874275ba5cdc58bacb4fac993c42231481a62d7f746ab00d5223a5495f2dfbb5"
+  },
+  {
+    "path": "stage_3_pinns/data/stage2_k_eta_synthetic.mat",
+    "bytes": 18334968,
+    "sha256": "dab765d6e6c5deb8193da17ef71b4791246fc55985ab39ffb3add649be893fb3"
+  },
+  {
+    "path": "stage_3_pinns/data/stage3_k_eta_alpha_synthetic.mat",
+    "bytes": 54541938,
+    "sha256": "f681006658c7fcf2b25151b758f2bcc882aaa61977668c5472bf575af2144736"
+  },
+  {
+    "path": "stage_3_pinns/decode_pinn_parameters.m",
+    "bytes": 496,
+    "sha256": "763eea9c42edd4b640c26a2439b7d337a0ce63a021d31159e4ae46801d07ae85"
+  },
+  {
+    "path": "stage_3_pinns/deterministic_parameter_update.m",
+    "bytes": 1256,
+    "sha256": "a20454172a83cec49d285898e89153a5e3dbc0fc500d529bf05426187dfde1e8"
+  },
+  {
+    "path": "stage_3_pinns/energy_weight_schedule.m",
+    "bytes": 618,
+    "sha256": "6dbcadd432e4eba8a1faddddd44eade6487cb691834021d7fcadd1abd9122594"
+  },
+  {
+    "path": "stage_3_pinns/evaluate_affine_residuals.m",
+    "bytes": 422,
+    "sha256": "639e57bb9d18eece33cb9fa4775ce82841431a0c1833361e5508d0716e64c98b"
+  },
+  {
+    "path": "stage_3_pinns/evaluate_comparison_method.m",
+    "bytes": 4192,
+    "sha256": "1f89a47e7adbd1b61f1e5324739af3b8333a0227d678f656bacd3b87ecf49d28"
+  },
+  {
+    "path": "stage_3_pinns/fit_classical_method.m",
+    "bytes": 1858,
+    "sha256": "2c6ff33a46599914fcb447d446b52b99d12066b7ded55b0d40127b6307f5b6a6"
+  },
+  {
+    "path": "stage_3_pinns/fluid_inverse_refinement_loss.m",
+    "bytes": 2548,
+    "sha256": "466b6a481e95325fb3c21ed96ac2766f63428d5d1d13d744f3f638351a5b82da"
+  },
+  {
+    "path": "stage_3_pinns/fluid_pretrain_loss.m",
+    "bytes": 1578,
+    "sha256": "d6c7e33a3a266bbb88eb55b9694c52d4a70a6370ebe513f0625d2b601c6c3d05"
+  },
+  {
+    "path": "stage_3_pinns/generate_pinn_synthetic_data.m",
+    "bytes": 2126,
+    "sha256": "86373ed14851391f522e1a7eca1d3a22995b0584cb986e748b5bc4d0e95a3318"
+  },
+  {
+    "path": "stage_3_pinns/initial_pinn_theta.m",
+    "bytes": 283,
+    "sha256": "2e5fe831fe924c4be79ce942bcb511cd2a326fd3609d17d3cae5efc34e5968fd"
+  },
+  {
+    "path": "stage_3_pinns/load_or_generate_pinn_data.m",
+    "bytes": 306,
+    "sha256": "c34169a2c15d9caa3992f1f0a9176deaa0b7a1708ab2dfbf99bb09805cedd9f4"
+  },
+  {
+    "path": "stage_3_pinns/make_pinn_meta.m",
+    "bytes": 834,
+    "sha256": "468e3203f6ed9328ceeb3ca45eda864d3ade63aa083ae9d49384a359b8313aa7"
+  },
+  {
+    "path": "stage_3_pinns/normalized_inputs.m",
+    "bytes": 315,
+    "sha256": "39f5018b3a551bff04f87edbd07bd68a70e285d0b8be7478719fe51846efaf58"
+  },
+  {
+    "path": "stage_3_pinns/normalized_wall_inputs.m",
+    "bytes": 807,
+    "sha256": "6bc8719fc658c1319eea832b9e493a13002289f8d87215a9e403b6f1c7ccef9b"
+  },
+  {
+    "path": "stage_3_pinns/parameter_only_loss.m",
+    "bytes": 1104,
+    "sha256": "a313856e0bf72124ea205525d979164baf4fd40b32e81444ac569d4a521058c2"
+  },
+  {
+    "path": "stage_3_pinns/pinn_settings.m",
+    "bytes": 2536,
+    "sha256": "24fe0ffeb4cd863f655d2fe636a98ab99f08176ffbc5cd8b4db4d2d25178d9e9"
+  },
+  {
+    "path": "stage_3_pinns/plot_pinn_comparison.m",
+    "bytes": 1772,
+    "sha256": "ef546b4362b73f096419e6ed9d71bbb37c8fc45bc48f0817f00e898063a00bc0"
+  },
+  {
+    "path": "stage_3_pinns/plot_two_network_training.m",
+    "bytes": 2469,
+    "sha256": "feff7461a65087efb87854abf60ec9b41f9f57ae402a59d8bbb74f1f3c6ed903"
+  },
+  {
+    "path": "stage_3_pinns/predict_pinn_state.m",
+    "bytes": 489,
+    "sha256": "41bae730f6948b4c8aab8fc45a34fb8e16d008ef95c3818c3692a248be533d45"
+  },
+  {
+    "path": "stage_3_pinns/prepare_pinn_batch.m",
+    "bytes": 1462,
+    "sha256": "e6282f66f586b6b10d392c59d89a7c190d1e5fea155ccd7bf78335f9d70b6eae"
+  },
+  {
+    "path": "stage_3_pinns/pressure_dl.m",
+    "bytes": 237,
+    "sha256": "d7693383ca9aa1a5badc262c8dc368fb639e0ff03813edbadad93e7b34c3bfc5"
+  },
+  {
+    "path": "stage_3_pinns/pretrain_two_network_pinn.m",
+    "bytes": 2216,
+    "sha256": "3d248022fa408240c25771519caec29cea70c45584c437089e5029d3e82a0387"
+  },
+  {
+    "path": "stage_3_pinns/results/.gitkeep",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "stage_3_pinns/run_pinn_comparison.m",
+    "bytes": 2518,
+    "sha256": "cf17c0310ed570784a48e5707551b60628b73716dfac7e9e1b0765d4b7c6b783"
+  },
+  {
+    "path": "stage_3_pinns/run_pinn_smoke_test.m",
+    "bytes": 1309,
+    "sha256": "f2b0cc4d7164b373160c62036e5ba3e19e37d6bdf4396657178f985d13c722d6"
+  },
+  {
+    "path": "stage_3_pinns/run_stage3_smoke_test.m",
+    "bytes": 3372,
+    "sha256": "9c4e7d7745f17a3fdfe8f16d53dec70d162eaa24ef3e4060b575d291fc6cf728"
+  },
+  {
+    "path": "stage_3_pinns/sample_pinn_batch.m",
+    "bytes": 1825,
+    "sha256": "0ab7de5a2578b983f41cd27011cc0a88891fde7ed600f54da7c0b64d958a4615"
+  },
+  {
+    "path": "stage_3_pinns/solve_bounded_affine_parameters.m",
+    "bytes": 3274,
+    "sha256": "d4fc558847dd17c9eb80ba58b76abcd607d125554b24833e663d091713090a6a"
+  },
+  {
+    "path": "stage_3_pinns/train_pinn_method.m",
+    "bytes": 4726,
+    "sha256": "c951cd7476e5c26b87d5050cf9e83ba1ed8cddd4141736bf09cfa334c1ce4559"
+  },
+  {
+    "path": "stage_3_pinns/two_network_energy_loss.m",
+    "bytes": 1468,
+    "sha256": "43e05774bba4fe0dac2c0b8cdc2c06a5c0291d9ee299cc0e4db63d2cd6d13428"
+  },
+  {
+    "path": "stage_3_pinns/two_network_pinn_loss.m",
+    "bytes": 2773,
+    "sha256": "b897fca2511657347f8d51fbf96f29aa0d48006e87831642e337c1b7374b1c5e"
+  },
+  {
+    "path": "stage_3_pinns/wall_pretrain_loss.m",
+    "bytes": 340,
+    "sha256": "545ae84fdbd96312de8232914e9134be7d089d8b86fc09946262d51061b5aee1"
+  }
+]

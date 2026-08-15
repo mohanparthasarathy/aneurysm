@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript."
+title: "Energy-consistent reduced-order aneurysm inverse modeling"
+type: software
+authors:
+  - family-names: Parthasarathy
+    given-names: Mohan
+  - family-names: Seshaiyer
+    given-names: Padmanabhan
