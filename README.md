@@ -10,7 +10,7 @@ This repository contains the computational workflow used for the forward model, 
 - `aneurysm_forward_solver/` — coupled PDE--ODE solver, analytical validation, energy tests, manufactured-solution convergence, and verification-figure generation.
 - `aneurysm_forward_physics/` — final reduced/full forward-physics experiments, amplitude-dependent compliance, wideband response, dimensional analysis, and parameter tables.
 - `aneurysm_inverse_identifiability/` — reduced volume-domain inverse model, local SVD/Fisher analysis, Monte Carlo practical-identifiability utilities, and protocol construction. Shared forward-physics utilities are referenced from `aneurysm_forward_physics/` rather than duplicated here.
-- `stage_3_pinns/` — final multi-stage inverse engine. Despite the historical folder name, `run_pinn_comparison([1 2 3])` runs Stages 1, 2, and 3 from one codebase. Final synthetic datasets are included in `stage_3_pinns/data/`.
+- `stage_3_pinns/` — final multi-stage inverse engine. Despite the historical folder name, `run_pinn_comparison([1 2 3])` runs Stages 1, 2, and 3 from one codebase. The Stage 1 and Stage 2 synthetic datasets are included in `stage_3_pinns/data/`. The larger Stage 3 dataset is generated from the full PDE--ODE model when needed and is not tracked in the repository.
 - `aneurysm_robustness/` — noise, sparsity, and repeated-seed Stage-3 robustness workflow.
 - `aneurysm_global_sensitivity/` — toolbox-free Saltelli--Sobol and Morris screening.
 - `publication_figures/` — curated graphics used in the manuscript, when present in the archived source repository.
@@ -101,7 +101,20 @@ results2 = run_pinn_comparison(2);
 results3 = run_pinn_comparison(3);
 ```
 
-The included datasets correspond to the final synthetic truth multipliers `[1.30, 0.70, 1.80]` for `[k, eta, alpha]` and 0.5% volume noise. If the data files are removed, the code regenerates them from the full PDE--ODE model.
+
+### Synthetic data
+
+The Stage 1 and Stage 2 synthetic datasets are included in `stage_3_pinns/data/` for convenience. The Stage 3 synthetic dataset is not tracked in the repository because of its file size. All three datasets are generated from the full PDE--ODE forward model using the experiment definitions and synthetic truth specified in the code. The final truth multipliers are `[1.30, 0.70, 1.80]` for `[k, eta, alpha]`, with 0.5% volume noise in the primary inverse experiments.
+
+When Stage 3 is run and its dataset is not present locally, the code regenerates the required synthetic data before performing the inverse calculation. Therefore, no externally hosted data file is required to reproduce the Stage 3 experiment.
+
+To generate the Stage 3 data and run the three-parameter inverse comparison:
+
+```matlab
+cd stage_3_pinns
+clear functions; clear classes; rehash
+results3 = run_pinn_comparison(3);
+```
 
 ### 5. Robustness experiments
 
@@ -155,7 +168,7 @@ See `stage_3_pinns/pinn_settings.m` for the complete configuration.
 
 ## Curated outputs
 
-`publication_results/` contains lightweight CSV files corresponding to the principal numerical results. Large trained-network MAT files and intermediate optimizer checkpoints were intentionally omitted to keep the public repository manageable; they can be regenerated from the included code and synthetic datasets.
+`publication_results/` contains lightweight CSV files corresponding to the principal numerical results. Large trained-network MAT files, intermediate optimizer checkpoints, and the generated Stage 3 synthetic dataset are intentionally omitted to keep the public repository manageable. These files can be regenerated from the included MATLAB code; the Stage 1 and Stage 2 synthetic datasets are retained in `stage_3_pinns/data/` for convenience.
 
 `publication_figures/` contains the figure files available in the supplied archive. 
 
