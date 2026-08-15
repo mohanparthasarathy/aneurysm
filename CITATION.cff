@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the accompanying manuscript."
-title: "Energy-consistent reduced-order aneurysm inverse modeling"
+title: "PINNs for intracranial aneurysm dynamics"
 type: software
 authors:
   - family-names: Parthasarathy
