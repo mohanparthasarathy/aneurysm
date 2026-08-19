@@ -88,10 +88,6 @@ end
 
 %% ------------------------------------------------------------------------
 % Stage 3 state reconstruction and energy consistency
-%
-% These are the figures used in the main manuscript. Restricting them to
-% Stage 3 avoids the previous 3-by-3 layout and makes each diagnostic
-% readable at journal size.
 % -------------------------------------------------------------------------
 
 stateMetrics = { ...
@@ -161,14 +157,6 @@ for study = ["noise","sparsity"]
 
     close(fig);
 end
-
-
-%% ------------------------------------------------------------------------
-% Runtime figure
-%
-% Retain all three stages because this figure documents the computational
-% scaling of the inverse methods and can be used in supplementary material.
-% -------------------------------------------------------------------------
 
 fig = figure('Visible','off','Color','w', ...
     'Position',[100 100 1200 370]);
